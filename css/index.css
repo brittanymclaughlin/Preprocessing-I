@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 .Fontit {
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Manrope', cursive;
 }
 .bordercurve {
   border-radius: 15px;
@@ -164,7 +164,7 @@ html {
   margin: 10px;
 }
 #container header nav a {
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Manrope', cursive;
   border-radius: 5px;
   width: 100%;
   size: 2rem;
@@ -179,14 +179,35 @@ html {
   text-transform: none;
 }
 #container header h1 {
-  font-family: 'Homemade Apple', cursive;
-  font-size: 2rem;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4rem;
+  color: #2f00bb;
 }
 #container #intro {
   background-color: white;
   padding: 3%;
   margin-bottom: 25px;
   border-radius: 15px;
+}
+#container #intro h3 {
+  font-family: 'Economica';
+  font-size: 5rem;
+  text-align: center;
+  text-indent: 50%;
+  margin-bottom: 10px;
+}
+#container #intro #floatintro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container #intro #floatintro img {
+  width: 30%;
+  border-radius: 15px;
+  padding: 4px;
+  border-color: #f2eeff;
+  border-width: 2px;
+  border-style: solid;
 }
 #container #skills {
   background-color: white;
@@ -204,4 +225,7 @@ html {
   background-color: #d7caff;
   padding: 3%;
   border-radius: 15px;
+  border-color: #b9a2ff;
+  border-width: 1px;
+  border-style: solid;
 }

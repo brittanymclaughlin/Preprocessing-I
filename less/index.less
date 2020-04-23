@@ -5,7 +5,7 @@
 */
 @primarycolor: #ccbbff;
 .Fontit{
-	font-family: 'Comic Neue', cursive;
+	font-family: 'Manrope', cursive;
 }
 
 .Flexit(@content,@items){
@@ -100,7 +100,7 @@ html{
 				border-radius: 5px;
 				width:100%;
 				size:2rem;
-				color:darken(@primarycolor,30%);
+				color:darken(@primarycolor, 30%);
 				background-color:lighten(@primarycolor,8%);
 				border-style: solid;
 				border-width: 1px;
@@ -114,8 +114,9 @@ html{
 			}
 		}
 		h1{
-			font-family: 'Homemade Apple', cursive;
-			font-size: 2rem;
+			font-family: 'Fredericka the Great', cursive;
+			font-size: 4rem;
+			color:darken(@primarycolor, 50%);
 		}
 	}
 
@@ -127,7 +128,27 @@ html{
 	padding:3%;
 	margin-bottom:25px;
 	.bordercurve;
+	
+	h3{
+		font-family: 'Economica';
+		font-size: 5rem;
+		text-align:center;
+		text-indent: 50%;
+		margin-bottom:10px;
+	}
 
+	#floatintro{
+		.Flexit(center, center);
+
+		img{
+			width:30%;
+			.bordercurve;
+			padding:4px;
+			border-color: lighten(@primarycolor, 10%);
+			border-width:2px;
+			border-style: solid;
+			}
+		}
 	}
 
 	#skills{
@@ -147,6 +168,9 @@ footer{
 	background-color:lighten(@primarycolor, 3%);
 	padding:3%;
 	.bordercurve;
+	border-color:darken(@primarycolor, 5%);
+	border-width: 1px;
+	border-style: solid;
 	
 
 }
