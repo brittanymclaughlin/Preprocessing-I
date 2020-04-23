@@ -1,1 +1,207 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.Fontit {
+  font-family: 'Comic Neue', cursive;
+}
+.bordercurve {
+  border-radius: 15px;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  background-color: #ccbbff;
+}
+#container {
+  width: 100%;
+  margin: 5%;
+}
+#container header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1%;
+}
+#container header nav {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+#container header nav a {
+  font-family: 'Comic Neue', cursive;
+  border-radius: 5px;
+  width: 100%;
+  size: 2rem;
+  color: #5922ff;
+  background-color: #ebe4ff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 3%;
+  border-color: #a688ff;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: none;
+}
+#container header h1 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2rem;
+}
+#container #intro {
+  background-color: white;
+  padding: 3%;
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
+#container #skills {
+  background-color: white;
+  padding: 3%;
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
+#container #work {
+  background-color: white;
+  padding: 3%;
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
+#container footer {
+  background-color: #d7caff;
+  padding: 3%;
+  border-radius: 15px;
+}
