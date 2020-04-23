@@ -6,6 +6,7 @@
 @primarycolor: #ccbbff;
 .Fontit{
 	font-family: 'Manrope', cursive;
+	font-size:.8rem;
 }
 
 .Flexit(@content,@items){
@@ -15,8 +16,15 @@
 }
 .bordercurve{
 	border-radius: 15px;
+	border-color:darken(@primarycolor, 5%);
+	border-width: 1px;
+	border-style: solid;
 }
+.hpresets{
+	color:darken(@primarycolor,60%);
 
+	font-family: 'Economica';
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -73,21 +81,26 @@ table {
 // 	.Flexit(center,center);
 // }
 body {
-	height: 100vh;
-	width:80%;
+	height: 100%;
+	width:100%;
 	.Flexit(center,center);
+	.Fontit;
 }
 html{
 	background-color: @primarycolor;
 }
 #container{
 	
-	width:100%;
+	width:100vw;
 	margin:5%;
+	padding:2%;
 
 	header{
 		.Flexit(space-evenly,center);
 		margin-top:1%;
+		@media (max-width:500px){
+			flex-direction: column;
+		}
 
 
 		nav{
@@ -116,7 +129,11 @@ html{
 		h1{
 			font-family: 'Fredericka the Great', cursive;
 			font-size: 4rem;
-			color:darken(@primarycolor, 50%);
+			color:darken(@primarycolor, 60%);
+			@media (max-width:500px){
+				font-size:2rem;
+			
+			}
 		}
 	}
 
@@ -130,15 +147,29 @@ html{
 	.bordercurve;
 	
 	h3{
-		font-family: 'Economica';
+		.hpresets;
 		font-size: 5rem;
 		text-align:center;
 		text-indent: 50%;
-		margin-bottom:10px;
+		margin-bottom:1%;
+		line-height:30%;
+		margin-top:4%;
+		@media(max-width: 500px){
+			font-size:1.8rem;
+			text-align:left;
+			text-indent: 20%;
+			margin-bottom:3%;
+		}
 	}
 
 	#floatintro{
 		.Flexit(center, center);
+
+		p{
+			padding:2%;
+			margin:4%;
+			margin-top:0%;
+		}
 
 		img{
 			width:30%;
@@ -147,6 +178,7 @@ html{
 			border-color: lighten(@primarycolor, 10%);
 			border-width:2px;
 			border-style: solid;
+			
 			}
 		}
 	}
@@ -154,25 +186,66 @@ html{
 	#skills{
 		background-color:white;
 		padding:3%;
+		text-align: center;
 		margin-bottom:25px;
 		.bordercurve;
+
+		h3{
+			.hpresets;
+			font-size:1.1rem;
+			
+		}
+		ul{
+
+			.odd{
+				width:90%;
+				border-radius: 3px;
+				padding:1%;
+				margin-left:5%;
+				margin-right: 5%;
+				background-color: lighten(@primarycolor, 10%);
+			
+			}
+			.even{
+				background-color: darken(@primarycolor, 4%);
+				width: 90%;
+				margin-left:5%;
+				margin-right:5%;
+				padding:1%;
+				border-radius: 3px;
+			}
+		}
 	}
 
 #work{
 	background-color: white;
 	padding:3%;
 	margin-bottom:25px;
+	text-align: center;
 	.bordercurve;
+
+	h3{
+		.hpresets;
+		font-size: 1.2rem;
+	}
 }
 footer{
 	background-color:lighten(@primarycolor, 3%);
 	padding:3%;
 	.bordercurve;
-	border-color:darken(@primarycolor, 5%);
-	border-width: 1px;
-	border-style: solid;
+	text-align:center;
+	font-size:.7rem;
+	color:darken(@primarycolor, 60%);
 	
-
+	#emp{
+		font-style: oblique;
+	}
+	a{
+		text-decoration: none;
+		text-transform: none;
+		color:darken(@primarycolor, 60%);
+		
+	}
 }
 
 
