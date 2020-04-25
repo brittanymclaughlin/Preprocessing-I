@@ -220,9 +220,28 @@ html{
 	text-align: center;
 	.bordercurve;
 
+
 	h3{
 		.hpresets;
 		font-size: 1.2rem;
+	}
+	#workpics{
+		.Flexit(center,flex-start);
+		flex-wrap: wrap;
+		@media (max-width:500px){
+			justify-content: center;
+			flex-direction: column;
+		}
+		
+		.workz{
+			width: 25%;
+			height:auto;
+			margin:1%;
+			@media (max-width:500px){
+				width: 70vw;
+				height:auto;
+			}
+		}
 	}
 }
 footer{

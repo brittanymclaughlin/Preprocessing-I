@@ -298,6 +298,29 @@ html {
   font-family: 'Economica';
   font-size: 1.2rem;
 }
+#container #work #workpics {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  #container #work #workpics {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+#container #work #workpics .workz {
+  width: 25%;
+  height: auto;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  #container #work #workpics .workz {
+    width: 70vw;
+    height: auto;
+  }
+}
 #container footer {
   background-color: #d7caff;
   padding: 3%;
