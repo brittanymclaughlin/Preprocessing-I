@@ -3,6 +3,28 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@primarycolor: #ccbbff;
+.Fontit{
+	font-family: 'Manrope', cursive;
+	font-size:.8rem;
+}
+
+.Flexit(@content,@items){
+	display:flex;
+	justify-content: @content;
+	align-items: @items;
+}
+.bordercurve{
+	border-radius: 15px;
+	border-color:darken(@primarycolor, 5%);
+	border-width: 1px;
+	border-style: solid;
+}
+.hpresets{
+	color:darken(@primarycolor,60%);
+
+	font-family: 'Economica';
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,7 +42,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -53,7 +75,199 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+
+body {
+	height: 100%;
+	width:100%;
+	.Flexit(center,center);
+	.Fontit;
+}
+html{
+	background-color: @primarycolor;
+}
+#container{
+	
+	width:100vw;
+	margin:5%;
+	padding:2%;
+
+	header{
+		.Flexit(space-evenly,center);
+		margin-top:1%;
+		@media (max-width:500px){
+			flex-direction: column;
+		}
+
+
+		nav{
+		width: auto;
+		.Flexit(space-evenly,center);
+		margin:10px;
+
+			a{
+				.Fontit;
+				border-radius: 5px;
+				width:100%;
+				size:2rem;
+				color:darken(@primarycolor, 30%);
+				background-color:lighten(@primarycolor,8%);
+				border-style: solid;
+				border-width: 1px;
+				padding:3%;
+				border-color:darken(@primarycolor, 10%);
+				margin:10px;
+				text-decoration: none;
+				text-transform: none;
+			
+
+			}
+		}
+		h1{
+			font-family: 'Fredericka the Great', cursive;
+			font-size: 4rem;
+			color:darken(@primarycolor, 60%);
+			@media (max-width:500px){
+				font-size:2rem;
+			
+			}
+		}
+	}
+
+
+
+
+#intro{
+	background-color:white;
+	padding:3%;
+	margin-bottom:25px;
+	.bordercurve;
+	
+	h3{
+		.hpresets;
+		font-size: 5rem;
+		text-align:center;
+		text-indent: 50%;
+		margin-bottom:1%;
+		line-height:30%;
+		margin-top:4%;
+		@media(max-width: 500px){
+			font-size:1.8rem;
+			text-align:left;
+			text-indent: 20%;
+			margin-bottom:3%;
+		}
+	}
+
+	#floatintro{
+		.Flexit(center, center);
+
+		p{
+			padding:2%;
+			margin:4%;
+			margin-top:0%;
+		}
+
+		img{
+			width:30%;
+			.bordercurve;
+			padding:4px;
+			border-color: lighten(@primarycolor, 10%);
+			border-width:2px;
+			border-style: solid;
+			
+			}
+		}
+	}
+
+	#skills{
+		background-color:white;
+		padding:3%;
+		text-align: center;
+		margin-bottom:25px;
+		.bordercurve;
+
+		h3{
+			.hpresets;
+			font-size:1.1rem;
+			
+		}
+		ul{
+
+			.odd{
+				width:90%;
+				border-radius: 3px;
+				padding:1%;
+				margin-left:5%;
+				margin-right: 5%;
+				background-color: lighten(@primarycolor, 10%);
+			
+			}
+			.even{
+				background-color: darken(@primarycolor, 4%);
+				width: 90%;
+				margin-left:5%;
+				margin-right:5%;
+				padding:1%;
+				border-radius: 3px;
+			}
+		}
+	}
+
+#work{
+	background-color: white;
+	padding:3%;
+	margin-bottom:25px;
+	text-align: center;
+	.bordercurve;
+
+
+	h3{
+		.hpresets;
+		font-size: 1.2rem;
+	}
+	#workpics{
+		.Flexit(center,flex-start);
+		flex-wrap: wrap;
+		@media (max-width:500px){
+			justify-content: center;
+			flex-direction: column;
+		}
+		
+		.workz{
+			width: 25%;
+			height:auto;
+			margin:1%;
+			@media (max-width:500px){
+				width: 70vw;
+				height:auto;
+			}
+		}
+	}
+}
+footer{
+	background-color:lighten(@primarycolor, 3%);
+	padding:3%;
+	.bordercurve;
+	text-align:center;
+	font-size:.7rem;
+	color:darken(@primarycolor, 60%);
+	
+	#emp{
+		font-style: oblique;
+	}
+	a{
+		text-decoration: none;
+		text-transform: none;
+		color:darken(@primarycolor, 60%);
+		
+	}
 }
 
+
+
+
+
+
+
+
+}
